@@ -8,28 +8,25 @@
 
     <style>
 
-
         body{
             font-variant-caps: all-petite-caps;
-
-
+            /* background-color:#000; */
         }
 
         .widget {
             padding: 5px 5px ;
-            color: #000000;
+            color: #fff;
             display: flex;
             justify-content:center;
             align-items:center;
             flex-direction: column;
             max-width: 95%;
             margin: auto;
-            border: 3px solid #000000;
+            border: 3px solid #fff;
             border-radius: 5px;
-            box-shadow: 2px 2px 1px 0px #000000;
+            box-shadow: 3px 3px 1px 0px #fff;
 
         }
-
            
         .greet{
             font-size: 3em;
@@ -55,22 +52,12 @@
             font-size: 1em;
             display: inline-block;
         }
-
-     
-
-
-
-
     </style>
 </head>
 <body>
 
-
-
-
 <div class="container>">
     <div class="widget">
-
             <div class="greet" id="greet"></div>
 
                 <div class="date" id="date"></div>
@@ -81,19 +68,12 @@
                     <div class="colon">:</div>
                     <div class="time" id="sec"></div>
                 </div>
-           
-
-        
-
     </div>
 </div>
         
-
-
-
 <script>
 
-function dispalyGreetings(today){
+    function dispalyGreetings(today){
         hrs = today.getHours();
         name=""
         if (hrs < 12)
@@ -109,9 +89,7 @@ function dispalyGreetings(today){
     function dispalyDate(today) {  
        
         const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
         var dayName = days[today.getDay()];
         var monthName = monthNames[today.getMonth()];
